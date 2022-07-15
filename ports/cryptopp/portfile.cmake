@@ -59,6 +59,10 @@ vcpkg_cmake_configure(
         -DBUILD_TESTING=OFF
         -DBUILD_DOCUMENTATION=OFF
         -DDISABLE_ASM=${CRYPTOPP_DISABLE_ASM}
+        -DDISABLE_AVX=ON
+        -DDISABLE_AVX2=ON
+        -DDISABLE_SSSE3=ON
+        -DDISABLE_SSE4=ON
 )
 
 vcpkg_cmake_install ()
