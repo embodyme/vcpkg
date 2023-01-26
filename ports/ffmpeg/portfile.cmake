@@ -458,6 +458,8 @@ if (VCPKG_TARGET_IS_OSX)
     set(OPTIONS "${OPTIONS} --disable-vdpau") # disable vdpau in OSX
 endif()
 
+set(OPTIONS "${OPTIONS} --disable-libxcb --disable-libxcb-shm --disable-libxcb-xfixes --disable-libxcb-shape")
+
 set(OPTIONS_CROSS " --enable-cross-compile")
 
 # ffmpeg needs --cross-prefix option to use appropriate tools for cross-compiling.
