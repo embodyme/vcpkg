@@ -1,0 +1,22 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index e70c4d0b..8038abee 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -366,7 +366,7 @@
+         endif()
+     else()
+         message(STATUS "Using system opusfile")
+-        find_package(opusfile REQUIRED)
++        find_package(OpusFile CONFIG REQUIRED)
+         if(NOT SDL2MIXER_OPUS_SHARED)
+             list(APPEND PC_REQUIRES opusfile)
+         endif()
+@@ -384,7 +384,7 @@
+             add_dependencies(SDL2_mixer opusfile::opusfile)
+         endif()
+     else()
+-        target_link_libraries(SDL2_mixer PRIVATE opusfile::opusfile)
++        target_link_libraries(SDL2_mixer PRIVATE OpusFile::opusfile)
+     endif()
+ endif()
+ 
