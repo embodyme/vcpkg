@@ -1,3 +1,4 @@
+set(VERSION 0.12+20221121)
 vcpkg_check_linkage(ONLY_STATIC_LIBRARY)
 
 vcpkg_from_github(
