@@ -1,0 +1,13 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 7617205b5..d8f0cc7c3 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -603,7 +603,7 @@ if(USE_GCC OR USE_CLANG)
+ 
+   # Android needs to bring in external files that don't adhere to the declaration-after-statement
+   # warning, so skip this warning on Android.
+-  if(NOT ANDROID)
++  if(NOT ANDROID AND NOT APPLE)
+     check_c_compiler_flag(-Wdeclaration-after-statement HAVE_GCC_WDECLARATION_AFTER_STATEMENT)
+     if(HAVE_GCC_WDECLARATION_AFTER_STATEMENT)
+       check_c_compiler_flag(-Werror=declaration-after-statement HAVE_GCC_WERROR_DECLARATION_AFTER_STATEMENT)

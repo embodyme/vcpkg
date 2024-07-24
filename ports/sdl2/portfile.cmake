@@ -8,6 +8,8 @@ vcpkg_from_github(
     PATCHES
         0001-sdl2-Enable-creation-of-pkg-cfg-file-on-windows.patch
         0002-sdl2-skip-ibus-on-linux.patch
+        0003-sdl2-disable-declaration-after-statement-on-apple.patch
+        0004-android-ndk-fix.patch
 )
 
 string(COMPARE EQUAL "${VCPKG_LIBRARY_LINKAGE}" "static" SDL_STATIC)
