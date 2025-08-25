@@ -93,8 +93,8 @@
       "port-version": 1
     },
     "angle": {
-      "baseline": "chromium_4472",
-      "port-version": 3
+      "baseline": "chromium_7258",
+      "port-version": 0
     },
     "antlr4": {
       "baseline": "4.10.1",
